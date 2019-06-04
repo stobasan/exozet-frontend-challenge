@@ -1,3 +1,5 @@
+**Exozet frontend challenge based on the Gulp Boilerplate by https://github.com/cferdinandi/gulp-boilerplate**
+
 # Gulp Boilerplate [![Build Status](https://travis-ci.org/cferdinandi/gulp-boilerplate.svg)](https://travis-ci.org/cferdinandi/gulp-boilerplate)
 
 A boilerplate for building web projects with [Gulp](https://gulpjs.com/). Uses Gulp 4.x.
