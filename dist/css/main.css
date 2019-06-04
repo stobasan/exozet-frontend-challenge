@@ -1,0 +1,546 @@
+/*!
+ * exozet-frontend-challenge v1.0
+ * Exozet frontend challenge
+ * (c) 2019 Michal Stobinski
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, src/sass/components/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, src/sass/components/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, src/sass/components/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, src/sass/components/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, src/sass/components/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, src/sass/components/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, src/sass/components/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * @section Base Styles
+ */
+/* line 7, src/sass/components/_base.scss */
+html {
+  background: #f5f5f5;
+  font-size: 100%;
+}
+
+/* line 12, src/sass/components/_base.scss */
+body {
+  font: 1em/1.5 'Titillium Web', sans-serif;
+  color: #333333;
+  margin: 0 auto;
+  padding: 40px 30px 30px;
+  max-width: 1000px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 24, src/sass/components/_base.scss */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* line 31, src/sass/components/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 2, src/sass/components/_utilities.scss */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 6, src/sass/components/_utilities.scss */
+.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 1, src/sass/components/_header.scss */
+header.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 1, src/sass/components/_header.scss */
+  header.nav {
+    display: block;
+  }
+}
+
+/* line 12, src/sass/components/_header.scss */
+header.nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 12, src/sass/components/_header.scss */
+  header.nav ul {
+    margin-top: 15px;
+  }
+}
+
+/* line 20, src/sass/components/_header.scss */
+header.nav ul li {
+  display: inline-block;
+}
+
+/* line 23, src/sass/components/_header.scss */
+header.nav ul li a {
+  display: inline-block;
+  padding: 5px 20px;
+  color: #333333;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1.125em;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 23, src/sass/components/_header.scss */
+  header.nav ul li a {
+    padding: 5px 10px;
+  }
+}
+
+/* line 38, src/sass/components/_header.scss */
+header.nav ul li a.active, header.nav ul li a:hover {
+  border-color: #c3c0c5;
+  background: #e8e7e8;
+}
+
+/* line 48, src/sass/components/_header.scss */
+header.nav:after {
+  content: "";
+  height: 1px;
+  width: 300%;
+  background: #c3c0c5;
+  bottom: 0;
+  right: -10px;
+  position: absolute;
+}
+
+/* line 2, src/sass/components/_content.scss */
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 9, src/sass/components/_content.scss */
+h1, h2 {
+  font-size: 2em;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 9, src/sass/components/_content.scss */
+  h1, h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* line 22, src/sass/components/_content.scss */
+h2 {
+  border-bottom: 1px solid #c3c0c5;
+}
+
+/* line 26, src/sass/components/_content.scss */
+h3 {
+  font-size: 1.125em;
+  border-bottom: 1px solid #c3c0c5;
+  margin-bottom: 10px;
+}
+
+/* line 32, src/sass/components/_content.scss */
+p, ul, ol {
+  font-size: 0.875em;
+  margin-bottom: 1em;
+}
+
+/* line 37, src/sass/components/_content.scss */
+a {
+  color: #739024;
+}
+
+/* line 41, src/sass/components/_content.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 45, src/sass/components/_content.scss */
+main {
+  position: relative;
+  width: 70%;
+  float: left;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 45, src/sass/components/_content.scss */
+  main {
+    width: 100%;
+  }
+}
+
+/* line 55, src/sass/components/_content.scss */
+aside {
+  float: left;
+  width: 22%;
+  margin-left: 8%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 55, src/sass/components/_content.scss */
+  aside {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* line 65, src/sass/components/_content.scss */
+aside .link-list {
+  padding-left: 5px;
+}
+
+/* line 69, src/sass/components/_content.scss */
+aside .link-list li:before {
+  content: '›';
+  font-size: 1.6em;
+  line-height: 0.8;
+  color: #739024;
+  padding-right: 6px;
+  font-weight: bold;
+}
+
+/* line 81, src/sass/components/_content.scss */
+aside figure img {
+  display: inherit;
+  width: 100%;
+}
+
+/* line 86, src/sass/components/_content.scss */
+aside figure figcaption {
+  border: 1px solid #c3c0c5;
+  border-top: none;
+  padding: 10px;
+  background: #f5f5f5;
+}
+
+/* line 95, src/sass/components/_content.scss */
+.icon {
+  display: inline-block;
+  width: 18px;
+  text-align: center;
+}
+
+/* line 101, src/sass/components/_content.scss */
+.cta-button {
+  color: #fff;
+  text-align: center;
+  display: block;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 1px 0 2px rgba(0, 0, 0, 0.35);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 1px 0 2px rgba(0, 0, 0, 0.35);
+  border: 1px solid #536e0b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b6c58e), to(#739024));
+  background: linear-gradient(#b6c58e, #739024);
+  border-radius: 6px;
+  padding: 0 15px 2px;
+}
+
+/* line 112, src/sass/components/_content.scss */
+.cta-button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#b6c58e), to(#536e0b));
+  background: linear-gradient(#b6c58e, #536e0b);
+}
+
+/* line 117, src/sass/components/_content.scss */
+article {
+  margin-bottom: 20px;
+}
+
+/* line 120, src/sass/components/_content.scss */
+article ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-left: 10px;
+}
+
+/* line 126, src/sass/components/_content.scss */
+article time {
+  color: #999999;
+  font-size: 0.875em;
+}
+
+/* line 132, src/sass/components/_content.scss */
+blockquote {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  width: 70%;
+  padding: 15px 0;
+  margin: 15px auto;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 132, src/sass/components/_content.scss */
+  blockquote {
+    width: 100%;
+  }
+}
+
+/* line 146, src/sass/components/_content.scss */
+blockquote:before, blockquote:after {
+  height: 1px;
+  width: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #c3c0c5;
+  position: absolute;
+  content: "";
+}
+
+/* line 158, src/sass/components/_content.scss */
+blockquote:before {
+  top: 0;
+}
+
+/* line 163, src/sass/components/_content.scss */
+blockquote:after {
+  bottom: 0;
+}
+
+/* line 168, src/sass/components/_content.scss */
+.img-float-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+}
+
+/* line 172, src/sass/components/_content.scss */
+.img-float-left img {
+  padding: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  background: #f5f5f5;
+}
+
+/* line 179, src/sass/components/_content.scss */
+.img-float-left figcaption {
+  color: #999999;
+  font-size: 0.688em;
+}
+
+/* line 2, src/sass/components/_form.scss */
+#contact-form {
+  width: 70%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 2, src/sass/components/_form.scss */
+  #contact-form {
+    width: 100%;
+  }
+}
+
+/* line 9, src/sass/components/_form.scss */
+#contact-form p {
+  margin-left: 30%;
+}
+
+/* line 13, src/sass/components/_form.scss */
+#contact-form label {
+  text-align: right;
+  font-size: 0.875em;
+  vertical-align: top;
+  padding: 3px 20px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+/* line 22, src/sass/components/_form.scss */
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"],
+#contact-form textarea {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 1px solid #c3c0c5;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+  padding: 2px 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 33, src/sass/components/_form.scss */
+#contact-form textarea {
+  min-height: 100px;
+}
+
+/* line 37, src/sass/components/_form.scss */
+#contact-form .error {
+  display: none;
+}
+
+/* line 43, src/sass/components/_form.scss */
+#contact-form.validate input:invalid + .error,
+#contact-form.validate textarea:invalid + .error {
+  position: relative;
+  color: #e30042;
+  margin-top: 5px;
+  display: block;
+  font-size: 0.875em;
+}
+
+/* line 53, src/sass/components/_form.scss */
+#contact-form input[type="submit"] {
+  float: right;
+}
+
+/* line 57, src/sass/components/_form.scss */
+#contact-form .row {
+  margin-bottom: 12px;
+}
+
+/* line 60, src/sass/components/_form.scss */
+#contact-form .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 67, src/sass/components/_form.scss */
+#contact-form .col-1 {
+  width: 30%;
+  float: left;
+}
+
+/* line 72, src/sass/components/_form.scss */
+#contact-form .col-2 {
+  width: 70%;
+  float: left;
+}
+
+/* line 77, src/sass/components/_form.scss */
+#contact-form sup {
+  color: #739024;
+}
+
+/* line 1, src/sass/components/_footer.scss */
+footer {
+  position: relative;
+  padding-top: 20px;
+  line-height: 1;
+}
+
+/* line 6, src/sass/components/_footer.scss */
+footer:after {
+  content: "";
+  height: 1px;
+  width: 300%;
+  background: #c3c0c5;
+  top: 0;
+  right: -10px;
+  position: absolute;
+}
+
+/* line 17, src/sass/components/_footer.scss */
+footer ul li {
+  display: inline-block;
+  border-right: 1px solid #739024;
+  padding: 0 5px;
+}
+
+/* line 22, src/sass/components/_footer.scss */
+footer ul li:last-of-type {
+  border-right: none;
+}
+
+/* line 26, src/sass/components/_footer.scss */
+footer ul li a {
+  color: #739024;
+}

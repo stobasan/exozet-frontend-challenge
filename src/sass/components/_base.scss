@@ -1,0 +1,33 @@
+/**
+ * @section Base Styles
+ */
+
+
+
+html {
+	background: $offwhite;
+	font-size: 100%;
+}
+
+body {
+	font: 1em/1.5 'Titillium Web', sans-serif;
+	color: $primary;
+	margin: 0 auto;
+	padding: 40px 30px 30px;
+	max-width: 1000px;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	background: #fff;
+	box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+	font: inherit;
+}
+
+a {
+	text-decoration: none;
+}

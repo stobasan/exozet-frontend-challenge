@@ -1,0 +1,31 @@
+footer {
+    position: relative;
+    padding-top: 20px;
+    line-height: 1;
+
+    &:after {
+        content: "";
+        height: 1px;
+        width: 300%;
+        background: $secondary;
+        top: 0;
+        right: -10px;
+        position: absolute;
+    }
+
+    ul {
+        li {
+            display: inline-block;
+            border-right: 1px solid $cta-light;
+            padding: 0 5px;
+
+            &:last-of-type {
+                border-right: none;
+            }
+
+            a {
+                color: $cta-light;
+            }
+        }
+    }
+}

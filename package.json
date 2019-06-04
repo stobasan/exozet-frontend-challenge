@@ -1,0 +1,36 @@
+{
+	"name": "exozet-frontend-challenge",
+	"version": "1.0",
+	"description": "Exozet frontend challenge",
+	"main": "./dist/common.js",
+	"author": {
+		"name": "Michal Stobinski",
+		"url": "http://stobasan.github.io"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stobasan/exozet-frontend-challenge"
+	},
+	"devDependencies": {
+		"gulp-autoprefixer": "^6.1.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-jshint": "^2.1.0",
+		"gulp-optimize-js": "^1.1.0",
+		"gulp-svgmin": "^2.2.0",
+		"jshint": "^2.10.2"
+	},
+	"dependencies": {
+		"browser-sync": "^2.26.5",
+		"del": "^4.1.1",
+		"gulp": "^4.0.2",
+		"gulp-cssnano": "^2.1.3",
+		"gulp-flatmap": "^1.0.2",
+		"gulp-header": "^2.0.7",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-terser": "^1.2.0",
+		"jshint-stylish": "^2.2.1",
+		"lazypipe": "^1.0.2"
+	}
+}

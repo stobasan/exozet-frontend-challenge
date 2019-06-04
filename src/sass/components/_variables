@@ -1,0 +1,18 @@
+// Color variables
+$primary: #333333;
+$secondary: #c3c0c5;
+$cta-light: #739024;
+$cta-dark: #536e0b;
+$gradient-light: #b6c58e;
+$gradient-dark: #739024;
+$offwhite: #f5f5f5;
+$error: #e30042;
+
+
+$nav-button: #e8e7e8;
+$gray-text: #999999;
+
+// Other variables
+$border-radius: 3px;
+$transition-duration: 0.2s;
+

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exozet Frontend Challenge coded by Michal Stobinski</title>
+	<meta name="description" content="Exozet Frontend Challenge coded by Michal Stobinski">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header class="nav">
+		<a href="/">
+			<img src="img/logo.png" alt="Exozet">
+		</a>
+		<nav>
+			<ul>
+				<li>
+					<a href="#" class="active">News</a>
+				</li>
+				<li>
+					<a href="#">Kontakt</a>
+				</li>
+				<li>
+					<a href="#">Impressum</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="wrapper">
+	
+		<main>
+		
+			<article>
+				<header>
+					<time datetime="2012-02-20 19:02">20.02.2012 | 19.02 Uhr</time>
+					<h1>Long headlinetext /</h1>
+				</header>
+				<p>Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich lese nicht sehr viele Zeitungen, aber ich habe gehört viele Situationen. Erstens: wir haben nicht offensiv gespielt. Es gibt keine deutsche Mannschaft spielt offensiv und die Name offensiv wie Bayern.</p>
+				<p>Letzte Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir müssen nicht vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese Wörter, ist möglich verstehen, was ich hab gesagt? Danke.</p>
+				<blockquote>
+						„Ein Trainer ist nicht ein Idiot! Ein Trainer sei sehen was passieren in Platz.“ – Trapattoni ’98
+				</blockquote>
+				<p>Offensiv, offensiv ist wie machen wir in Platz. Zweitens: ich habe erklärt mit diese zwei Spieler: nach Dortmund brauchen vielleicht Halbzeit Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch. Ich habe gesehen auch zwei Tage die Training.</p>
+				<figure class="img-float-left">
+					<img src="img/img1.jpg" alt="Opera House" />
+					<figcaption>© Lorempixel.com</figcaption>
+				</figure>
+				<p>Ich habe fertig! . . . wenn es gab Fragen, ich kann Worte wiederholen. . . Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich lese nicht sehr viele Zeitungen, aber ich habe gehört viele Situationen. Erstens: wir haben nicht offensiv gespielt. Es gibt keine <a href="#">deutsche Mannschaft</a> spielt offensiv und die Name offensiv wie Bayern. Letzte Spiel hatten wir in Platz drei Spitzen: Elber, Jancka und dann Zickler. Wir müssen nicht vergessen Zickler. Zickler ist eine Spitzen mehr, Mehmet eh mehr Basler. Ist klar diese Wörter, ist möglich verstehen, was ich hab gesagt? Danke. Offensiv, offensiv ist wie machen wir in Platz. Zweitens: ich habe erklärt mit diese zwei Spieler: nach Dortmund brauchen vielleicht Halbzeit Pause. Ich habe auch andere Mannschaften gesehen in Europa nach diese Mittwoch.</p>
+				
+			</article>
+			
+			<article>
+				<header>
+					<h2>Formular /</h2>
+				</header>
+				<form id="contact-form">
+					<p>Felder mit einem <sup>*</sup> sind Pflichtfelder.</p>
+					<fieldset>
+						<div class="row">
+							<div class="col-1">
+								<label for="name">Name<sup>*</sup></label>
+							</div>
+							<div class="col-2">
+								<input type="text" id="name" name="name" required pattern="[A-Za-z]+" title="Bitte geben Sie nur Buchstaben ein">
+								<span class="error">Bitte geben Sie nur Buchstaben ein</span>
+							</div>	
+						</div>
+						<div class="row">
+							<div class="col-1">
+								<label for="email">E-mail<sup>*</sup></label>
+							</div>
+							<div class="col-2">	
+								<input type="email" id="email" name="email" required title="Bitte geben Sie eine gültige E-Mail-Adresse ein">
+								<span class="error">Bitte geben Sie eine gültige E-Mail-Adresse ein</span>
+							</div>	
+						</div>	
+						<div class="row">
+							<div class="col-1">
+								<label for="tel">Telefon</label>
+							</div>
+							<div class="col-2">		
+								<input type="tel" id="tel" name="tel" pattern="\d*" title="Bitte geben Sie eine gültige Telefonnummer ein (nur mit Nummern)">
+								<span class="error">Bitte geben Sie eine gültige Telefonnummer ein (nur mit Nummern)</span>
+							</div>	
+						</div>
+						<div class="row">
+							<div class="col-1">
+								<label for="comment">Kommentar<sup>*</sup></label>
+							</div>
+							<div class="col-2">		
+								<textarea id="comment" name="comment" required maxlength="500"></textarea>
+								<span class="error">Bitte geben Sie einen Kommentar mit maximal 500 Zeichen ein</span>
+							</div>	
+						</div>
+						<div class="row">
+							<input type="submit" id="submit" value="Abschicken" class="cta-button">
+						</div>
+					</fieldset> 
+				</form> 
+			</article>
+
+			<article>
+				<header>
+					<h2>Leistungsumfang /</h2>
+				</header>
+				<div class="flex space-between">
+					<ol >
+						<li>Lorem</li>
+						<li>Ipsum</li>
+						<li>Dolor</li>
+						<li>Sit</li>
+					</ol>
+					<ul>
+						<li>Exozet: GmbH</li>
+						<li>Mitarbeiter: ca. 150</li>
+						<li>Groups: Games, Interact, Effects</li>
+						<li>Gründung: 1996</li>
+					</ul>
+				</div>		
+			</article>
+			
+		</main>
+
+		<aside>
+			<article>
+				<header>
+					<h3>Interne Linkliste</h3>
+				</header>		
+				<ul class="link-list">
+					<li><a href="#">Link Nummer 1</a></li>
+					<li><a href="#">Link Nummer 2</a></li>
+					<li><a href="#">Link Nummer 3</a></li>
+				</ul>
+			</article>
+
+			<article>
+				<header>
+					<h3>Kontakt</h3>
+				</header>	
+				<address>
+					<p>
+						Exozet Berlin GmbH<br>
+						Platz der Luftbrücke 4-6<br>
+						12101 Berlin
+					</p>
+					<p>	
+						<span class="icon">&#128222;</span> Tel.: +49 (0)30 24 65 60 - 0<br>
+						<span class="icon">&#9993;</span> E-Mail: <a href="mailto:info@exozet.com">info@exozet.com</a>
+					</p>	
+				</address>
+			</article>
+			
+			<article>
+				<header>
+					<h3>Image Teaser</h3>
+				</header>	
+				<figure>
+					<img src="img/img2.jpg" alt="Opera House" />
+					<figcaption>
+						<p>Es gibt im Moment in diese Mannschaft, oh einige Spieler!</p>
+						<a href="#" class="cta-button">Mehr lesen</a>
+					</figcaption>
+				</figure>
+			</article>
+
+		</aside>
+
+	</div>	
+
+	<footer class="flex space-between">
+		<p><sup>&copy;</sup>exozet 2014</p>
+		<nav>
+			<ul>
+				<li>
+					<a href="#" class="active">News</a>
+				</li>
+				<li>
+					<a href="#">Kontakt</a>
+				</li>
+				<li>
+					<a href="#">Impressum</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="js/common.js"></script>
+</body>
+</html>
